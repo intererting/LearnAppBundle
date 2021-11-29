@@ -51,7 +51,7 @@ android {
         density {
             // This property is set to true by default.
             //按密度拆分
-            enableSplit = true
+//            enableSplit = true
         }
         abi {
             // This property is set to true by default.

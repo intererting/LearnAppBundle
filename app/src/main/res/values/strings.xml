@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LearnAppBundle</string>
+    <string name="title_storage">存储模块</string>
+</resources>

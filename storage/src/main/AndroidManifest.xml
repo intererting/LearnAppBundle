@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.yly.storage">
+
+    <!--   dist:instant="false"      是否可以免安装使用-->
+    <!--   dist:title      用户安装时看到的名字-->
+    <!--  <dist:fusing dist:include="true" /> 因为aab只有在5.0以上有效,所以5.0一下生成全版本-->
+    <!--      <dist:on-demand /> 动态加载,不会打包到基础模块中-->
+    <!--    <dist:install-time /> 随基本模块安装-->
+    <!--    dist:conditions>  安装的时候根据条件随基本模块安装-->
+    <dist:module
+        dist:instant="false"
+        dist:title="@string/title_storage">
+        <dist:delivery>
+            <dist:on-demand />
+
+            <!--            <dist:install-time />-->
+
+            <!--            <dist:install-time>-->
+            <!--                <dist:conditions>-->
+            <!--                    &lt;!&ndash;                    <dist:user-countries dist:exclude="false">&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                        <dist:country dist:code="US" />&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                    </dist:user-countries>&ndash;&gt;-->
+            <!--                    <dist:min-sdk dist:value="31" />-->
+            <!--                </dist:conditions>-->
+            <!--            </dist:install-time>-->
+        </dist:delivery>
+        <dist:fusing dist:include="true" />
+    </dist:module>
+</manifest>
